@@ -18,7 +18,7 @@ def fetch_news():
     news_base_url = "https://newsapi.org/v2/top-headlines"
     news_params = {
         "country": "in",  # For India
-        "apiKey": "db5a3802ccd44e4680b236795c4f34fe"
+        "apiKey": "YOUR_NEWS_API_KEY"
     }
     response = requests.get(news_base_url, params=news_params)
     if response.status_code == 200:
@@ -43,7 +43,7 @@ def fetch_weather():
     weather_base_url = "http://api.openweathermap.org/data/2.5/weather"
     weather_params = {
         "q": "Hyderabad",  # City name
-        "appid": "9b3c931b340524f40d7bb611d41d5971",
+        "appid": "YOUR_WEATHER_API_KEY",
         "units": "metric"  # For temperature in Celsius
     }
     response = requests.get(weather_base_url, params=weather_params)
